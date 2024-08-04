@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page-catalog" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,8 +9,246 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
-  <header class="header">Шапка</header>
+<body class="page-catalog__body body-catalog">
+  <header class="body-catalog__header header">
+    <a class="header__logo logo" href="#">
+      <img class="logo__image logo__image--mobile logo__image--tablet logo__image--desktop" src="#" width="70" height="59" alt="Логотип сайта КэтЭнерджи">
+    </a>
+    <a class="header__logo-title logo-title" href="#">
+      <!-- Пока добавила IMGем, хотя планирую вставлять SVG. Ещё не разобралась как в этом проекте это правильно сделать -->
+      <img class="logo-title__description" src="#" width="101" height="18" alt="Надпись Cat Energy">
+    </a>
+    <nav class="header__main-navigation main-navigation">
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--current" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__navigation-menu-button header__navigation-menu-button--close header__navigation-menu-button--hidden" type="button">
+      <span class="visually-hidden">Открыть меню навигации</span>
+    </button>
+  </header>
+  <main class="body-catalog__main main-catalog">
+    <section class="main-catalog__cards main-catalog__cards--mobile main-catalog__cards--tablet main-catalog__cards--desktop cards">
+      <h1 class="cards__title">Каталог продукции</h1>
+      <ul class="cards__list cards__list--mobile cards__list--tablet cards__list--desktop cards-list">
+        <li class="cards-list__item cards-list__item--medium-image cards-list__item--small-image cards-list__item--mobile cards-list__item--tablet cards-list__item--desktop card">
+          <h2 class="card__title">Cat Energy PRO 500 г</h2>
+          <img class="card__image" src="#" width="84" height="100" alt="Корм для котов со вкусом курицы 500 грамм">
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Масса</span>
+            <span>500 г</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Вкус</span>
+            <span>Курица</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Цена</span>
+            <span>700 ₽</span>
+          </p>
+          <button class="card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="cards-list__item cards-list__item--large-image cards-list__item--mobile cards-list__item--tablet cards-list__item--desktop card">
+          <h2 class="card__title">Cat Energy PRO 1000 г</h2>
+          <img class="card__image" src="#" width="84" height="100" alt="Корм для котов со вкусом курицы 1000 грамм">
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Масса</span>
+            <span>1000 г</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Вкус</span>
+            <span>Курица</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Цена</span>
+            <span>1000 ₽</span>
+          </p>
+          <button class="card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="cards-list__item cards-list__item--small-image cards-list__item--mobile cards-list__item--tablet cards-list__item--desktop card">
+          <h2 class="card__title">Cat Energy PRO 500 г</h2>
+          <img class="card__image" src="#" width="84" height="100" alt="Корм для котов со вкусом рыбы 500 грамм">
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Масса</span>
+            <span>500 г</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Вкус</span>
+            <span>Рыба</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Цена</span>
+            <span>700 ₽</span>
+          </p>
+          <button class="card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="cards-list__item cards-list__item--large-image cards-list__item--mobile cards-list__item--tablet cards-list__item--desktop card">
+          <h2 class="card__title">Cat Energy PRO 1000 г</h2>
+          <img class="card__image" src="#" width="84" height="100" alt="Корм для котов со вкусом рыбы 1000 грамм">
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Масса</span>
+            <span>1000 г</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Вкус</span>
+            <span>Рыба</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Цена</span>
+            <span>1000 ₽</span>
+          </p>
+          <button class="card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="cards-list__item cards-list__item--small-image cards-list__item--mobile cards-list__item--tablet cards-list__item--desktop card">
+          <h2 class="card__title">Cat Energy Slim 500 г</h2>
+          <img class="card__image" src="#" width="84" height="100" alt="Корм для котов со вкусом гречки 500 грамм">
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Масса</span>
+            <span>500 г</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Вкус</span>
+            <span>Гречка</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Цена</span>
+            <span>400 ₽</span>
+          </p>
+          <button class="card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="cards-list__item cards-list__item--large-image cards-list__item--mobile cards-list__item--tablet cards-list__item--desktop card">
+          <h2 class="card__title">Cat Energy Slim 1000 г</h2>
+          <img class="card__image" src="#" width="84" height="100" alt="Корм для котов со вкусом гречки 1000 грамм">
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Масса</span>
+            <span>1000 г</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Вкус</span>
+            <span>Гречка</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Цена</span>
+            <span>700 ₽</span>
+          </p>
+          <button class="card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="cards-list__item cards-list__item--small-image cards-list__item--mobile cards-list__item--tablet cards-list__item--desktop card">
+          <h2 class="card__title">Cat Energy Slim 500 г</h2>
+          <img class="card__image" src="#" width="84" height="100" alt="Корм для котов со вкусом риса 500 грамм">
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Масса</span>
+            <span>500 г</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Вкус</span>
+            <span>Рис</span>
+          </p>
+          <p class="card__description card__description--tablet card__description--desktop">
+            <span>Цена</span>
+            <span>500 ₽</span>
+          </p>
+          <button class="card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="cards-list__item cards-list__item--mobile cards-list__item--tablet cards-list__item--desktop more-products">
+          <h3 class="more-products__title">Показать еще 100500 товаров</h3>
+          <p class="more-products__description">На самом деле вкусов гораздо больше!</p>
+          <button class="more-products__button button" type="button">Показать все</button>
+        </li>
+      </ul>
+    </section>
+    <section class="main-catalog__subproducts subproducts">
+      <h2 class="subproducts__title">Дополнительные товары</h2>
+      <ul class="subproducts__list subproducts-list">
+        <li class="subproducts-list__item subproducts-list__item--mobile subproducts-list__item--tablet subproducts-list__item--desktop subproducts-card">
+          <h3 class="subproducts-card__title">Сахарозаменитель</h3>
+          <p class="subproducts-card__description">
+            <span>1 упаковка (100 г)</span>
+            <span>200 ₽</span>
+          </p>
+          <button class="subproducts-card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="subproducts-list__item subproducts-list__item--mobile subproducts-list__item--tablet subproducts-list__item--desktop subproducts-card">
+          <h3 class="subproducts-card__title">Питьевая вода</h3>
+          <p class="subproducts-card__description">
+            <span>5 литров</span>
+            <span>50 ₽</span>
+          </p>
+          <button class="subproducts-card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="subproducts-list__item subproducts-list__item--mobile subproducts-list__item--tablet subproducts-list__item--desktop subproducts-card">
+          <h3 class="subproducts-card__title">Молоко</h3>
+          <p class="subproducts-card__description">
+            <span>1 литр</span>
+            <span>100 ₽</span>
+          </p>
+          <button class="subproducts-card__button button" type="submit">Заказать</button>
+        </li>
+        <li class="subproducts-list__item subproducts-list__item--mobile subproducts-list__item--tablet subproducts-list__item--desktop subproducts-card">
+          <h3 class="subproducts-card__title">Витамины</h3>
+          <p class="subproducts-card__description">
+            <span>1 упаковка (30 г)</span>
+            <span>300 ₽</span>
+          </p>
+          <button class="subproducts-card__button button" type="submit">Заказать</button>
+        </li>
+      </ul>
+      <div class="subproducts__stock stock">
+        <p class="stock__description">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
+    </section>
+    <section class="main-catalog__subscribe subscribe">
+      <h2 class="subscribe__title">Акции и новинки</h2>
+      <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="subscribe-form__label" for="email">
+          Подпишитесь на наши новости и не пропустите ни одного предложения!
+          <input class="subscribe-form__input" type="email" name="email-data" id="email" placeholder="Введите Ваш e-mail" value="kuklachev@gmail.com">
+        </label>
+        <button class="subscribe-form__button button" type="submit">Подписаться</button>
+      </form>
+    </section>
+    <section class="main-catalog__contacts contacts">
+      <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <img class="contacts__image contacts__image--mobile contacts__image--tablet contacts__image--desktop" src="#" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи">
+    </section>
+  </main>
+  <footer class="body-catalog__footer body-catalog__footer--mobile body-catalog__footer--tablet body-catalog__footer--desktop footer">
+    <a class="footer__logo-title logo-title" href="#">
+      <!-- Пока добавила IMGем, хотя планирую вставлять SVG. Ещё не разобралась как в этом проекте это правильно сделать -->
+      <img class="logo-title__description" src="#" width="101" height="18" alt="Надпись Cat Energy">
+    </a>
+    <ul class="footer__social social">
+      <li class="social__item social-item">
+        <a class="social-item__link social-item__link--vk" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">VKontakte</span>
+        </a>
+      </li>
+      <li class="social__item social-item">
+        <a class="social-item__link social-item__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+      <li class="social__item social-item">
+        <a class="social-item__link social-item__link--twitter" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer__developer-logo developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <!-- Пока добавила IMGем, хотя планирую вставлять SVG. Ещё не разобралась как в этом проекте это правильно сделать -->
+      <img class="developer-logo__text" src="#" width="113" height="20" alt="HTMLacademy">
+      <img class="developer-logo__image" src="#" width="27" height="34" alt="Логотип разработчика">
+    </a>
+  </footer>
 </body>
 
 </html>
