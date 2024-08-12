@@ -6,6 +6,10 @@
   <title>CatEnergy. Функциональное питание для котов.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -38,7 +42,11 @@
     <section class="main__promo promo">
       <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="promo__image" src="#" width="280" height="270" alt="Корм для котов со вкусом курицы">
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-hero-desktop@1x.png 1x, images/index-hero-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-hero-tablet@1x.png 1x, images/index-hero-tablet@2x.png 2x">
+        <img class="promo__image" src="images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png 2x" width="280" height="270" alt="Корм для котов со вкусом курицы">
+      </picture>
       <a class="promo__link button button--accent" href="#">Подобрать программу</a>
     </section>
     <section class="main__option option">
@@ -71,13 +79,20 @@
       </dl>
       <p class="example__expenses">Затраты на питание:</p>
       <p class="example__cost">15 000 РУБ.</p>
-      <img class="example__image" src="#" width="280" height="256" alt="Похудение кота: до и после специального питания">
+      <picture>
+        <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-slider-tablet-desktop@1x.png 1x, images/cat-slider-tablet-desktop@2x.png 2x">
+        <img class="example__image" src="images/cat-slider-mobile@1x.png" srcset="images/cat-slider-mobile@2x.png" width="280" height="256" alt="Похудение кота: до и после специального питания">
+      </picture>
       <div>Слайдер пеключения внешнего вида кота</div>
     </section>
     <section class="main__contacts contacts">
       <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img class="contacts__image contacts__image--desktop" src="#" width="1440" height="400" alt="Карта проезда к офису компании Кэт Энерджи">
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="contacts__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи">
+      </picture>
     </section>
   </main>
   <footer class="body__footer footer">
