@@ -1,0 +1,25 @@
+.subscribe-form__input {
+  min-width: 280px;
+  font-family: var(--font-second, inherit);
+  font-size: 20px;
+  line-height: 1.48;
+  text-transform: uppercase;
+  padding: 6px 26px;
+}
+
+@media (min-width: 768px) {
+  .subscribe-form__input {
+    min-width: 376px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .subscribe-form__input {
+    min-width: 496px;
+  }
+}
+
+.subscribe-form__button {
+  font-size: 20px;
+  line-height: 1.3;
+}

@@ -1,0 +1,11 @@
+.main__example {
+  background-color: var(--bg-tertiary, #eaeaea);
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+}
+
+@media (min-width: 768px) {
+  .main__example {
+    background-image: linear-gradient(to bottom, #ffffff 40%, #eaeaea 40%);
+  }
+}

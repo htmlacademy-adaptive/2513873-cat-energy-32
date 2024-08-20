@@ -1,0 +1,19 @@
+.cards__title {
+  font-family: var(--font-second, inherit);
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-second, #fa5072);
+}
+
+@media (min-width: 768px) {
+  .cards__title {
+    font-size: 60px;
+  }
+}
+
+.cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

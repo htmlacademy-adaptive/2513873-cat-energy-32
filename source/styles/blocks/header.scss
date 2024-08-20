@@ -1,0 +1,33 @@
+.header__wrapper {
+  margin: 13px 20px 14px;
+}
+
+@media (min-width: 768px) {
+  .header__wrapper {
+    margin: 25px 30px 65px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__wrapper {
+    margin: 55px 110px 29px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+.header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .header__logo-wrapper {
+    justify-content: flex-start;
+  }
+}

@@ -13,13 +13,21 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page-catalog__body body-catalog">
-  <header class="body-catalog__header header">
+<body class="page-catalog__body body">
+  <header class="body__header header">
     <a class="header__logo logo" href="index.html">
-      <img class="logo__image" src="#" width="70" height="59" alt="Логотип сайта КэтЭнерджи">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта КэтЭнерджи">
+      </picture>
     </a>
     <a class="header__logo-title logo logo--title" href="index.html">
-      <img class="logo__description" src="#" width="101" height="18" alt="Надпись Cat Energy">
+      <picture>
+        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-desktop.svg">
+        <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text-tablet.svg">
+        <img class="logo__description" src="images/logo-text-mobile.svg" width="101" height="18" alt="Надпись Cat Energy">
+      </picture>
     </a>
     <nav class="header__main-navigation main-navigation">
       <ul class="main-navigation__list">
@@ -38,18 +46,19 @@
       <span class="visually-hidden">Открыть меню навигации</span>
     </button>
   </header>
-  <main class="body-catalog__main main-catalog">
-    <section class="main-catalog__cards cards">
+  <main class="body__main main">
+    <section class="main__cards cards">
       <h1 class="cards__title">Каталог продукции</h1>
       <ul class="cards__list cards-list">
-        <li class="cards-list__item card">
-          <h2 class="card__title card-title">
-            <a class="card-title__link" href="#">Cat Energy PRO 500 г</a>
+        <li class="cards-list__item card card--product">
+          <h2 class="card__title">
+            <a class="card__link" href="#">Cat Energy PRO 500 г</a>
           </h2>
-          <a class="card__image-link image-link" href="#">
+          <a class="card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" width="161" height="172" type="image/png" srcset="images/catalog-chiken-500-tablet-desktop@1x.png 1x, images/catalog-chiken-500-tablet-desktop@2x.png 2x">
-              <img class="image-link__image" src="images/catalog-chiken-500-mobile@1x.png" srcset="images/catalog-chiken-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом курицы 500 грамм">
+              <source media="(min-width: 1440px)" width="161" height="172" type="image/png" srcset="images/catalog-chiken-500-desktop@1x.png 1x, images/catalog-chiken-500-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" width="161" height="172" type="image/png" srcset="images/catalog-chiken-500-tablet@1x.png 1x, images/catalog-chiken-500-tablet@2x.png 2x">
+              <img class="card__image" src="images/catalog-chiken-500-mobile@1x.png" srcset="images/catalog-chiken-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом курицы 500 грамм">
             </picture>
           </a>
           <dl class="card__description">
@@ -62,15 +71,15 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
-        <li class="cards-list__item card">
-          <h2 class="card__title card-title">
-            <a class="card-title__link" href="#">Cat Energy PRO 1000 г</a>
+        <li class="cards-list__item card card--product">
+          <h2 class="card__title">
+            <a class="card__link" href="#">Cat Energy PRO 1000 г</a>
           </h2>
-          <a class="card__image-link image-link" href="#">
+          <a class="card__image-link" href="#">
             <picture>
               <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/catalog-chiken-1000-desktop@1x.png 1x, images/catalog-chiken-1000-desktop@2x.png 2x">
               <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/catalog-chiken-1000-tablet@1x.png 1x, images/catalog-chiken-1000-tablet@2x.png 2x">
-              <img class="image-link__image" src="images/catalog-chiken-1000-mobile@1x.png" srcset="images/catalog-chiken-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом курицы 1000 грамм">
+              <img class="card__image" src="images/catalog-chiken-1000-mobile@1x.png" srcset="images/catalog-chiken-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом курицы 1000 грамм">
             </picture>
           </a>
           <dl class="card__description">
@@ -83,14 +92,15 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
-        <li class="cards-list__item card">
-          <h2 class="card__title card-title">
-            <a class="card-title__link" href="#">Cat Energy PRO 500 г</a>
+        <li class="cards-list__item card card--product">
+          <h2 class="card__title">
+            <a class="card__link" href="#">Cat Energy PRO 500 г</a>
           </h2>
-          <a class="card__image-link image-link" href="#">
+          <a class="card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-fish-500-tablet-desktop@1x.png 1x, images/catalog-fish-500-tablet-desktop@2x.png 2x">
-              <img class="image-link__image" src="images/catalog-fish-500-mobile@1x.png" srcset="images/catalog-fish-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом рыбы 500 грамм">
+              <source media="(min-width: 1440px)" width="163" height="174" type="image/png" srcset="images/catalog-fish-500-desktop@1x.png 1x, images/catalog-fish-500-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-fish-500-tablet@1x.png 1x, images/catalog-fish-500-tablet@2x.png 2x">
+              <img class="card__image" src="images/catalog-fish-500-mobile@1x.png" srcset="images/catalog-fish-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом рыбы 500 грамм">
             </picture>
           </a>
           <dl class="card__description">
@@ -103,15 +113,15 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
-        <li class="cards-list__item card">
-          <h2 class="card__title card-title">
-            <a class="card-title__link" href="#">Cat Energy PRO 1000 г</a>
+        <li class="cards-list__item card card--product">
+          <h2 class="card__title">
+            <a class="card__link" href="#">Cat Energy PRO 1000 г</a>
           </h2>
-          <a class="card__image-link image-link" href="#">
+          <a class="card__image-link" href="#">
             <picture>
               <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/catalog-fish-1000-desktop@1x.png 1x, images/catalog-fish-1000-desktop@2x.png 2x">
               <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/catalog-fish-1000-tablet@1x.png 1x, images/catalog-fish-1000-tablet@2x.png 2x">
-              <img class="image-link__image" src="images/catalog-fish-1000-mobile@1x.png" srcset="images/catalog-fish-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом рыбы 1000 грамм">
+              <img class="card__image" src="images/catalog-fish-1000-mobile@1x.png" srcset="images/catalog-fish-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом рыбы 1000 грамм">
             </picture>
           </a>
           <dl class="card__description">
@@ -124,14 +134,15 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
-        <li class="cards-list__item card">
-          <h2 class="card__title card-title">
-            <a class="card-title__link" href="#">Cat Energy Slim 500 г</a>
+        <li class="cards-list__item card card--product">
+          <h2 class="card__title">
+            <a class="card__link" href="#">Cat Energy Slim 500 г</a>
           </h2>
-          <a class="card__image-link image-link" href="#">
+          <a class="card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" width="161" height="171" type="image/png" srcset="images/catalog-buckwheat-500-tablet-desktop@1x.png 1x, images/catalog-buckwheat-500-tablet-desktop@2x.png 2x">
-              <img class="image-link__image" src="images/catalog-buckwheat-500-mobile@1x.png" srcset="images/catalog-buckwheat-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом гречки 500 грамм">
+              <source media="(min-width: 1440px)" width="161" height="171" type="image/png" srcset="images/catalog-buckwheat-500-desktop@1x.png 1x, images/catalog-buckwheat-500-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" width="161" height="171" type="image/png" srcset="images/catalog-buckwheat-500-tablet@1x.png 1x, images/catalog-buckwheat-500-tablet@2x.png 2x">
+              <img class="card__image" src="images/catalog-buckwheat-500-mobile@1x.png" srcset="images/catalog-buckwheat-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом гречки 500 грамм">
             </picture>
           </a>
           <dl class="card__description">
@@ -144,15 +155,15 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
-        <li class="cards-list__item card">
-          <h2 class="card__title card-title">
-            <a class="card-title__link" href="#">Cat Energy Slim 1000 г</a>
+        <li class="cards-list__item card card--product">
+          <h2 class="card__title">
+            <a class="card__link" href="#">Cat Energy Slim 1000 г</a>
           </h2>
-          <a class="card__image-link image-link" href="#">
+          <a class="card__image-link" href="#">
             <picture>
               <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/catalog-buckwheat-1000-desktop@1x.png 1x, images/catalog-buckwheat-1000-desktop@2x.png 2x">
               <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/catalog-buckwheat-1000-tablet@1x.png 1x, images/catalog-buckwheat-1000-tablet@2x.png 2x">
-              <img class="image-link__image" src="images/catalog-buckwheat-1000-mobile@1x.png" srcset="images/catalog-buckwheat-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом гречки 1000 грамм">
+              <img class="card__image" src="images/catalog-buckwheat-1000-mobile@1x.png" srcset="images/catalog-buckwheat-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом гречки 1000 грамм">
             </picture>
           </a>
           <dl class="card__description">
@@ -165,14 +176,15 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
-        <li class="cards-list__item card">
-          <h2 class="card__title card-title">
-            <a class="card-title__link" href="#">Cat Energy Slim 500 г</a>
+        <li class="cards-list__item card card--product">
+          <h2 class="card__title">
+            <a class="card__link" href="#">Cat Energy Slim 500 г</a>
           </h2>
-          <a class="card__image-link image-link" href="#">
+          <a class="card__image-link" href="#">
             <picture>
-              <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-rice-500-tablet-desktop@1x.png 1x, images/catalog-rice-500-tablet-desktop@2x.png 2x">
-              <img class="image-link__image" src="images/catalog-rice-500-mobile@1x.png" srcset="images/catalog-rice-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом риса 500 грамм">
+              <source media="(min-width: 1440px)" width="163" height="174" type="image/png" srcset="images/catalog-rice-500-desktop@1x.png 1x, images/catalog-rice-500-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-rice-500-tablet@1x.png 1x, images/catalog-rice-500-tablet@2x.png 2x">
+              <img class="card__image" src="images/catalog-rice-500-mobile@1x.png" srcset="images/catalog-rice-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом риса 500 грамм">
             </picture>
           </a>
           <dl class="card__description">
@@ -192,12 +204,12 @@
         </li>
       </ul>
     </section>
-    <section class=" main-catalog__subproducts subproducts">
+    <section class=" main__subproducts subproducts">
       <h2 class="subproducts__title">Дополнительные товары</h2>
       <ul class="subproducts__list subproducts-list">
-        <li class="subproducts-list__item card">
+        <li class="subproducts-list__item card card--subproduct">
           <h3 class="card__subtitle">Сахарозаменитель</h3>
-          <dl class="card__description">
+          <dl class="card__description card__description--subproducts">
             <dt class="visually-hidden">Количество</dt>
             <dd>1 упаковка (100 г)</dd>
             <dt class="visually-hidden">Цена</dt>
@@ -205,9 +217,9 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
-        <li class="subproducts-list__item card">
+        <li class="subproducts-list__item card card--subproduct">
           <h3 class="card__subtitle">Питьевая вода</h3>
-          <dl class="card__description">
+          <dl class="card__description card__description--subproducts">
             <dt class="visually-hidden">Количество</dt>
             <dd>5 литров</dd>
             <dt class="visually-hidden">Цена</dt>
@@ -215,9 +227,9 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
-        <li class="subproducts-list__item card">
+        <li class="subproducts-list__item card card--subproduct">
           <h3 class="card__subtitle">Молоко</h3>
-          <dl class="card__description">
+          <dl class="card__description card__description--subproducts">
             <dt class="visually-hidden">Количество</dt>
             <dd>1 литр</dd>
             <dt class="visually-hidden">Цена</dt>
@@ -225,9 +237,9 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
-        <li class="subproducts-list__item card">
+        <li class="subproducts-list__item card card--subproduct">
           <h3 class="card__subtitle">Витамины</h3>
-          <dl class="card__description">
+          <dl class="card__description card__description--subproducts">
             <dt class="visually-hidden">Количество</dt>
             <dd>1 упаковка (30 г)</dd>
             <dt class="visually-hidden">Цена</dt>
@@ -235,13 +247,13 @@
           </dl>
           <button class="card__button button button--accent" type="submit">Заказать</button>
         </li>
+        <li class="subproducts-list__item subproducts__stock subproducts__stock--font stock">
+          <h3 class="visually-hidden">Дополнительные предложения</h3>
+          <p class="stock__description">Закажите все и получите чехол для кота в подарок!</p>
+        </li>
       </ul>
-      <div class="subproducts__stock stock">
-        <h3 class="visually-hidden">Дополнительные предложения</h3>
-        <p class="stock__description">Закажите все и получите чехол для кота в подарок!</p>
-      </div>
     </section>
-    <section class="main-catalog__subscribe subscribe">
+    <section class="main__subscribe subscribe">
       <h2 class="subscribe__title">Акции и новинки</h2>
       <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -252,7 +264,7 @@
         <button class="subscribe-form__button button button--accent" type="submit">Подписаться</button>
       </form>
     </section>
-    <section class="main-catalog__contacts contacts">
+    <section class="main__contacts contacts">
       <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       <picture>
@@ -262,7 +274,7 @@
       </picture>
     </section>
   </main>
-  <footer class="body-catalog__footer footer">
+  <footer class="body__footer footer">
     <a class="footer__logo-title logo logo--title" href="#">
       <img class="logo__description" src="#" width="101" height="18" alt="Надпись Cat Energy">
     </a>

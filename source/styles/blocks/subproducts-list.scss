@@ -1,0 +1,18 @@
+.subproducts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 1440px) {
+  .subproducts-list {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.subproducts-list__item {
+  border-bottom: 1px solod #cdcdcd;
+}

@@ -1,0 +1,25 @@
+.button {
+  font-family: var(--font-second, inherit);
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  padding: 10px 26px;
+  border: transparent;
+  box-sizing: border-box;
+}
+
+.button--accent {
+  background-color: var(--bg-accent, #000080);
+  color: var(--color-third, #fa8072);
+}
+
+.button--secondary {
+  background-color: var(--bg-secondary, #000080);
+}
+
+@media (min-width: 768px) {
+  .button--promo {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}

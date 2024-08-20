@@ -1,0 +1,28 @@
+.stats__title {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .stats__title {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
+.stats__description {
+  font-family: var(--font-second, inherit);
+  font-size: 24px;
+  line-height: 1;
+  color: var(--color-second, #fa8072);
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .stats__description {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}

@@ -1,0 +1,55 @@
+.card__link {
+  font-family: var(--font-second, inherit);
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .card__link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.card__description {
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+@media (min-width: 768px) {
+  .card__description {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.card__subtitle {
+  font-family: var(--font-second, inherit);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .card__subtitle {
+    font-size: 20px;
+  }
+}
+
+.card__description--subproducts {
+  font-size: 14px;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .card__description--subproducts {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

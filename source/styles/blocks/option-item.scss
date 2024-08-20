@@ -1,0 +1,32 @@
+.option-item__title,
+.option-item__link {
+  font-family: var(--font-second, inherit);
+  text-transform: uppercase;
+  color: var(--color-second, #fa8072);
+}
+
+.option-item__title {
+  font-size: 24px;
+  line-height: 1.54;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .option-item__title {
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+.option-item__link {
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .option-item__link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

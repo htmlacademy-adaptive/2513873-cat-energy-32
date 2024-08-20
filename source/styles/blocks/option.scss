@@ -1,0 +1,10 @@
+.option__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.option__item {
+  background-color: var(--bg-secondary, #444444);
+  margin-bottom: 20px;
+}
