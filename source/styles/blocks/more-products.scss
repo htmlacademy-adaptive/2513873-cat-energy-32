@@ -9,6 +9,9 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 23px;
+  align-self: center;
 }
 
 @media (min-width: 768px) {
@@ -21,6 +24,8 @@
 .more-products__description {
   font-size: 12px;
   line-height: 1.33;
+  margin: 8px 0;
+  align-self: center;
 }
 
 @media (min-width: 768px) {
@@ -31,6 +36,14 @@
 }
 
 .more-products__link {
-  text-decoration: var(--text-no-under, none);
+  text-align: center;
+  text-decoration: none;
   color: var(--color-base, #fa8072);
+  margin-top: 13px;
+}
+
+@media (min-width: 768px) {
+  .more-products__link {
+    align-self: center;
+  }
 }

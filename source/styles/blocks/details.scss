@@ -1,9 +1,26 @@
+.details__wrapper {
+  margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .details__wrapper {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .details__wrapper {
+    margin: 0 110px;
+  }
+}
+
 .details__title {
   font-family: var(--font-second, inherit);
   font-size: 36px;
   line-height: 1.11;
   font-weight: 400;
   color: var(--color-second, #fa8072);
+  margin: 20px 0 40px;
 }
 
 @media (min-width: 768px) {

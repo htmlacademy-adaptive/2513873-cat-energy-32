@@ -1,3 +1,19 @@
+.cards__wrapper {
+  margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .cards__wrapper {
+    margin: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards__wrapper {
+    margin: 0 110px;
+  }
+}
+
 .cards__title {
   font-family: var(--font-second, inherit);
   font-size: 36px;

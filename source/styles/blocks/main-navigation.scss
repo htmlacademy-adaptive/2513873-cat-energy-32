@@ -15,6 +15,15 @@
   }
 }
 
+@media (min-width: 768px) {
+  .main-navigation__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+  }
+}
+
 .main-navigation__item {
   margin-bottom: 46px;
 }

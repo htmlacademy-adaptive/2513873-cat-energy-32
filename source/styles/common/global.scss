@@ -1,4 +1,20 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
 img {
   object-fit: contain;
+}
+
+body {
+  margin: 0 auto;
+  font-family: var(--font-base, inherit);
+  font-size: var(--fontsize-base, 14px);
+  line-height: 1.29;
+  background-color: var(--bg-primary, #ffffff);
+  color: var(--color-base, #444444);
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }

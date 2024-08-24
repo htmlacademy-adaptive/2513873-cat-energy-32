@@ -1,3 +1,19 @@
+.subscribe__wrapper {
+  margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .subscribe__wrapper {
+    margin: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .subscribe__wrapper {
+    margin: 0 110px;
+  }
+}
+
 .subscribe__title {
   font-family: var(--font-second, inherit);
   font-size: 24px;

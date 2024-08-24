@@ -1,10 +1,13 @@
 .header__wrapper {
   margin: 13px 20px 14px;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
   .header__wrapper {
     margin: 25px 30px 65px;
+    justify-content: space-between;
   }
 }
 
@@ -22,7 +25,6 @@
 
 .header__logo-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
