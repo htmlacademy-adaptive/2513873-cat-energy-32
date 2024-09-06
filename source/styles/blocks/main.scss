@@ -3,50 +3,62 @@
   position: relative;
   text-align: center;
   background-color: #3b7d1d;
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 40%), url("../../images/index-background-mobile@1x.jpg");
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 40%), url("../../images/index-background-mobile@1x.jpg"), linear-gradient(to right, #4f4e54 50%, #424147 50%);
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: contain, 320px 302px;
+  background-size: contain, 320px 302px, contain;
   color: var(--color-third, #fa8072);
-  display: grid;
-  grid-template-columns: 1fr 280px 1fr;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .main__promo {
-    display: block;
-    background-color: var(--bg-primary, #ffffff);
-    background-image: none;
-    color: var(--color-second, #fa8072);
-  }
-}
-
-@media (min-width: 1440px) {
-  .main__promo {
-    display: block;
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index-background-desktop@1x.jpg");
-    background-size: 720px 694px;
-    background-color: #ffffff;
-    background-position: 100% 0;
-  }
+.main__details {
+  margin-bottom: 49px;
 }
 
 .main__example {
   background-color: var(--bg-tertiary, #eaeaea);
-  display: grid;
-  grid-template-columns: 20px 1fr 20px;
+}
+
+.main__contacts {
+  background-color: var(--bg-secondary, #000080);
 }
 
 @media (min-width: 768px) {
   .main__example {
     grid-template-columns: 30px 1fr 30px;
-    background-image: linear-gradient(to bottom, #ffffff 40%, #eaeaea 40%);
+    background-image: linear-gradient(to bottom, #ffffff 57%, #eaeaea 57%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .main__promo {
+    min-width: 709px;
+    display: block;
+    background-color: var(--bg-primary, #ffffff);
+    background-image: none;
+    color: var(--color-second, #fa8072);
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1440px) {
+  .main__promo {
+    background-image: none;
+    background-color: #ffffff;
+  }
+
   .main__example {
     grid-template-columns: 110px 1fr 110px;
-    background-image: linear-gradient(to bottom, #ffffff 40%, #eaeaea 40%);
+    background-image: linear-gradient(to bottom, #ffffff 23%, #eaeaea 23%);
+  }
+
+  .main__cards {
+    margin-bottom: 46px;
+  }
+
+  .main__contacts {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 400px);
   }
 }

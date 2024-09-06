@@ -38,13 +38,13 @@
       <nav class="header__main-navigation main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--current" href="index.html">Главная</a>
+            <a class="main-navigation__link-catalog" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-navigation__link-catalog main-navigation__link-catalog--current" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Подбор программы</a>
+            <a class="main-navigation__link-catalog" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -63,16 +63,22 @@
               <picture>
                 <source media="(min-width: 1440px)" width="161" height="172" type="image/png" srcset="images/catalog-chiken-500-desktop@1x.png 1x, images/catalog-chiken-500-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="161" height="172" type="image/png" srcset="images/catalog-chiken-500-tablet@1x.png 1x, images/catalog-chiken-500-tablet@2x.png 2x">
-                <img class="card__image" src="images/catalog-chiken-500-mobile@1x.png" srcset="images/catalog-chiken-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом курицы 500 грамм">
+                <img class="card__image card__image--small" src="images/catalog-chiken-500-mobile@1x.png" srcset="images/catalog-chiken-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом курицы 500 грамм">
               </picture>
             </a>
             <dl class="card__description">
-              <dt>Масса</dt>
-              <dd>500 г</dd>
-              <dt>Вкус</dt>
-              <dd>Курица</dd>
-              <dt>Цена</dt>
-              <dd>700 ₽</dd>
+              <div class="card__definition">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Вкус</dt>
+                <dd>Курица</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Цена</dt>
+                <dd>700 ₽</dd>
+              </div>
             </dl>
             <button class="card__button button button--accent" type="submit">Заказать</button>
           </li>
@@ -88,12 +94,18 @@
               </picture>
             </a>
             <dl class="card__description">
-              <dt>Масса</dt>
-              <dd>1000 г</dd>
-              <dt>Вкус</dt>
-              <dd>Курица</dd>
-              <dt>Цена</dt>
-              <dd>1000 ₽</dd>
+              <div class="card__definition">
+                <dt>Масса</dt>
+                <dd>1000 г</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Вкус</dt>
+                <dd>Курица</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Цена</dt>
+                <dd>1000 ₽</dd>
+              </div>
             </dl>
             <button class="card__button button button--accent" type="submit">Заказать</button>
           </li>
@@ -105,16 +117,22 @@
               <picture>
                 <source media="(min-width: 1440px)" width="163" height="174" type="image/png" srcset="images/catalog-fish-500-desktop@1x.png 1x, images/catalog-fish-500-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-fish-500-tablet@1x.png 1x, images/catalog-fish-500-tablet@2x.png 2x">
-                <img class="card__image" src="images/catalog-fish-500-mobile@1x.png" srcset="images/catalog-fish-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом рыбы 500 грамм">
+                <img class="card__image card__image--small" src="images/catalog-fish-500-mobile@1x.png" srcset="images/catalog-fish-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом рыбы 500 грамм">
               </picture>
             </a>
             <dl class="card__description">
-              <dt>Масса</dt>
-              <dd>500 г</dd>
-              <dt>Вкус</dt>
-              <dd>Рыба</dd>
-              <dt>Цена</dt>
-              <dd>700 ₽</dd>
+              <div class="card__definition">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Вкус</dt>
+                <dd>Рыба</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Цена</dt>
+                <dd>700 ₽</dd>
+              </div>
             </dl>
             <button class="card__button button button--accent" type="submit">Заказать</button>
           </li>
@@ -125,17 +143,23 @@
             <a class="card__image-link" href="#">
               <picture>
                 <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/catalog-fish-1000-desktop@1x.png 1x, images/catalog-fish-1000-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/catalog-fish-1000-tablet@1x.png 1x, images/catalog-fish-1000-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/catalog-fish-1000-tablet@1x.png 1x, images/catalog-fish-1000-tablet@2x.png 2x">
                 <img class="card__image" src="images/catalog-fish-1000-mobile@1x.png" srcset="images/catalog-fish-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом рыбы 1000 грамм">
               </picture>
             </a>
             <dl class="card__description">
-              <dt>Масса</dt>
-              <dd>1000 г</dd>
-              <dt>Вкус</dt>
-              <dd>Рыба</dd>
-              <dt>Цена</dt>
-              <dd>1000 ₽</dd>
+              <div class="card__definition">
+                <dt>Масса</dt>
+                <dd>1000 г</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Вкус</dt>
+                <dd>Рыба</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Цена</dt>
+                <dd>1000 ₽</dd>
+              </div>
             </dl>
             <button class="card__button button button--accent" type="submit">Заказать</button>
           </li>
@@ -147,16 +171,22 @@
               <picture>
                 <source media="(min-width: 1440px)" width="161" height="171" type="image/png" srcset="images/catalog-buckwheat-500-desktop@1x.png 1x, images/catalog-buckwheat-500-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="161" height="171" type="image/png" srcset="images/catalog-buckwheat-500-tablet@1x.png 1x, images/catalog-buckwheat-500-tablet@2x.png 2x">
-                <img class="card__image" src="images/catalog-buckwheat-500-mobile@1x.png" srcset="images/catalog-buckwheat-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом гречки 500 грамм">
+                <img class="card__image card__image--small" src="images/catalog-buckwheat-500-mobile@1x.png" srcset="images/catalog-buckwheat-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом гречки 500 грамм">
               </picture>
             </a>
             <dl class="card__description">
-              <dt>Масса</dt>
-              <dd>500 г</dd>
-              <dt>Вкус</dt>
-              <dd>Гречка</dd>
-              <dt>Цена</dt>
-              <dd>400 ₽</dd>
+              <div class="card__definition">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Вкус</dt>
+                <dd>Гречка</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Цена</dt>
+                <dd>400 ₽</dd>
+              </div>
             </dl>
             <button class="card__button button button--accent" type="submit">Заказать</button>
           </li>
@@ -167,17 +197,23 @@
             <a class="card__image-link" href="#">
               <picture>
                 <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/catalog-buckwheat-1000-desktop@1x.png 1x, images/catalog-buckwheat-1000-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/catalog-buckwheat-1000-tablet@1x.png 1x, images/catalog-buckwheat-1000-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/catalog-buckwheat-1000-tablet@1x.png 1x, images/catalog-buckwheat-1000-tablet@2x.png 2x">
                 <img class="card__image" src="images/catalog-buckwheat-1000-mobile@1x.png" srcset="images/catalog-buckwheat-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом гречки 1000 грамм">
               </picture>
             </a>
             <dl class="card__description">
-              <dt>Масса</dt>
-              <dd>1000 г</dd>
-              <dt>Вкус</dt>
-              <dd>Гречка</dd>
-              <dt>Цена</dt>
-              <dd>700 ₽</dd>
+              <div class="card__definition">
+                <dt>Масса</dt>
+                <dd>1000 г</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Вкус</dt>
+                <dd>Гречка</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Цена</dt>
+                <dd>700 ₽</dd>
+              </div>
             </dl>
             <button class="card__button button button--accent" type="submit">Заказать</button>
           </li>
@@ -189,16 +225,22 @@
               <picture>
                 <source media="(min-width: 1440px)" width="163" height="174" type="image/png" srcset="images/catalog-rice-500-desktop@1x.png 1x, images/catalog-rice-500-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-rice-500-tablet@1x.png 1x, images/catalog-rice-500-tablet@2x.png 2x">
-                <img class="card__image" src="images/catalog-rice-500-mobile@1x.png" srcset="images/catalog-rice-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом риса 500 грамм">
+                <img class="card__image card__image--small" src="images/catalog-rice-500-mobile@1x.png" srcset="images/catalog-rice-500-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом риса 500 грамм">
               </picture>
             </a>
             <dl class="card__description">
-              <dt>Масса</dt>
-              <dd>500 г</dd>
-              <dt>Вкус</dt>
-              <dd>Рис</dd>
-              <dt>Цена</dt>
-              <dd>500 ₽</dd>
+              <div class="card__definition">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Вкус</dt>
+                <dd>Рис</dd>
+              </div>
+              <div class="card__definition">
+                <dt>Цена</dt>
+                <dd>500 ₽</dd>
+              </div>
             </dl>
             <button class="card__button button button--accent" type="submit">Заказать</button>
           </li>
@@ -213,52 +255,70 @@
     <section class=" main__subproducts subproducts">
       <div class="subproducts__wrapper">
         <h2 class="subproducts__title">Дополнительные товары</h2>
-        <ul class="subproducts__list subproducts-list">
-          <li class="subproducts-list__item card card--subproduct">
-            <h3 class="card__subtitle">Сахарозаменитель</h3>
-            <dl class="card__description card__description--subproducts">
-              <dt class="visually-hidden">Количество</dt>
-              <dd>1 упаковка (100 г)</dd>
-              <dt class="visually-hidden">Цена</dt>
-              <dd>200 ₽</dd>
-            </dl>
-            <button class="card__button button button--accent" type="submit">Заказать</button>
-          </li>
-          <li class="subproducts-list__item card card--subproduct">
-            <h3 class="card__subtitle">Питьевая вода</h3>
-            <dl class="card__description card__description--subproducts">
-              <dt class="visually-hidden">Количество</dt>
-              <dd>5 литров</dd>
-              <dt class="visually-hidden">Цена</dt>
-              <dd>50 ₽</dd>
-            </dl>
-            <button class="card__button button button--accent" type="submit">Заказать</button>
-          </li>
-          <li class="subproducts-list__item card card--subproduct">
-            <h3 class="card__subtitle">Молоко</h3>
-            <dl class="card__description card__description--subproducts">
-              <dt class="visually-hidden">Количество</dt>
-              <dd>1 литр</dd>
-              <dt class="visually-hidden">Цена</dt>
-              <dd>100 ₽</dd>
-            </dl>
-            <button class="card__button button button--accent" type="submit">Заказать</button>
-          </li>
-          <li class="subproducts-list__item card card--subproduct">
-            <h3 class="card__subtitle">Витамины</h3>
-            <dl class="card__description card__description--subproducts">
-              <dt class="visually-hidden">Количество</dt>
-              <dd>1 упаковка (30 г)</dd>
-              <dt class="visually-hidden">Цена</dt>
-              <dd>300 ₽</dd>
-            </dl>
-            <button class="card__button button button--accent" type="submit">Заказать</button>
-          </li>
-          <li class="subproducts-list__item subproducts__stock subproducts__stock--font stock">
+        <div class="subproducts__list-wrapper">
+          <ul class="subproducts__list subproducts-list">
+            <li class="subproducts-list__item card">
+              <h3 class="card__subtitle">Сахарозаменитель</h3>
+              <dl class="card__description card__description--subproducts">
+                <div class="card__definition card__definition--subproduct">
+                  <dt class="visually-hidden">Количество</dt>
+                  <dd>1 упаковка (100 г)</dd>
+                </div>
+                <div class="card__definition card__definition--subproduct">
+                  <dt class="visually-hidden">Цена</dt>
+                  <dd>200 ₽</dd>
+                </div>
+              </dl>
+              <button class="card__button card__button--subproduct button button--accent" type="submit">Заказать</button>
+            </li>
+            <li class="subproducts-list__item card card--subproduct">
+              <h3 class="card__subtitle">Питьевая вода</h3>
+              <dl class="card__description card__description--subproducts">
+                <div class="card__definition card__definition--subproduct">
+                  <dt class="visually-hidden">Количество</dt>
+                  <dd>5 литров</dd>
+                </div>
+                <div class="card__definition card__definition--subproduct">
+                  <dt class="visually-hidden">Цена</dt>
+                  <dd>50 ₽</dd>
+                </div>
+              </dl>
+              <button class="card__button card__button--subproduct button button--accent" type="submit">Заказать</button>
+            </li>
+            <li class="subproducts-list__item card card--subproduct">
+              <h3 class="card__subtitle">Молоко</h3>
+              <dl class="card__description card__description--subproducts">
+                <div class="card__definition card__definition--subproduct">
+                  <dt class="visually-hidden">Количество</dt>
+                  <dd>1 литр</dd>
+                </div>
+                <div class="card__definition card__definition--subproduct">
+                  <dt class="visually-hidden">Цена</dt>
+                  <dd>100 ₽</dd>
+                </div>
+              </dl>
+              <button class="card__button card__button--subproduct button button--accent" type="submit">Заказать</button>
+            </li>
+            <li class="subproducts-list__item card card--subproduct">
+              <h3 class="card__subtitle">Витамины</h3>
+              <dl class="card__description card__description--subproducts">
+                <div class="card__definition card__definition--subproduct">
+                  <dt class="visually-hidden">Количество</dt>
+                  <dd>1 упаковка (30 г)</dd>
+                </div>
+                <div class="card__definition card__definition--subproduct">
+                  <dt class="visually-hidden">Цена</dt>
+                  <dd>300 ₽</dd>
+                </div>
+              </dl>
+              <button class="card__button card__button--subproduct button button--accent" type="submit">Заказать</button>
+            </li>
+          </ul>
+          <div class="subproducts__stock stock">
             <h3 class="visually-hidden">Дополнительные предложения</h3>
-            <p class="stock__description">Закажите все и получите чехол для кота в подарок!</p>
-          </li>
-        </ul>
+            <p class="stock__description">Закажите все<br>и получите чехол для<br>кота&nbsp;в&nbsp;подарок!</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="main__subscribe subscribe">
@@ -267,7 +327,7 @@
         <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscribe-form__label" for="email">
-            Введите Ваш e-mail
+            <span class="visually-hidden">Введите Ваш e-mail</span>
             <input class="subscribe-form__input" type="email" name="email-data" id="email" placeholder="Введите Ваш e-mail" value="kuklachev@gmail.com">
           </label>
           <button class="subscribe-form__button button button--accent" type="submit">Подписаться</button>
@@ -279,11 +339,17 @@
         <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <picture>
-        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="contacts__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи">
-      </picture>
+      <div class="contacts__map-wrapper">
+        <div class="contacts__image-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img class="contacts__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи">
+          </picture>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247737302!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725632349929!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая конюшенная, дом 19/8, Санкт-Петербург">
+        </iframe>
+      </div>
     </section>
   </main>
   <footer class="body__footer footer">
@@ -309,8 +375,17 @@
         </li>
       </ul>
       <a class="footer__developer-logo developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="developer-logo__text" src="images/academy-textlogo.svg" width="113" height="20" alt="HTMLacademy">
-        <img class="developer-logo__image" src="images/academy-logo.svg" width="27" height="34" alt="Логотип разработчика">
+        <img class="developer-logo__text" src="images/academy-textlogo.svg" width="113" height="20" alt="Логотип разработчика HTMLacademy">
+        <svg class="developer-logo__image" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none">
+          <g clip-path="url(#a)">
+            <path d="m13.64.02-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z" fill="#666" />
+          </g>
+          <defs>
+            <clippath id="a">
+              <path fill="#fff" d="M0 0h27v34h-27z" />
+            </clippath>
+          </defs>
+        </svg>
       </a>
     </div>
   </footer>

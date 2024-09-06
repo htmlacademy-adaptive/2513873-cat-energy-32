@@ -15,13 +15,13 @@
 
 @media (min-height: 768px) {
   .details-list {
-    counter-reset: list 0;
+    counter-reset: list;
   }
 }
 
 .details-list__item {
   display: flex;
-  flex-wrap: wrap;
+  gap: 20px;
 
   &::before {
     content: "";
@@ -33,7 +33,29 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 30px 32px;
+    flex-shrink: 0;
   }
+}
+
+.details-list__item--leaf {
+  margin-right: 15px;
+  width: 230px;
+  --icon-details: url("../../icons/stack.svg#icon-leaf");
+}
+
+.details-list__item--powder {
+  width: 246px;
+  --icon-details: url("../../icons/stack.svg#icon-powder");
+}
+
+.details-list__item--eat {
+  width: 247px;
+  --icon-details: url("../../icons/stack.svg#icon-eat");
+}
+
+.details-list__item--time {
+  width: 249px;
+  --icon-details: url("../../icons/stack.svg#icon-time");
 }
 
 @media (min-width: 768px) {
@@ -42,62 +64,52 @@
   }
 
   .details-list__item {
+    counter-increment: list;
     min-width: 230px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(3, min-content);
     margin-bottom: 37px;
 
     &::before {
       width: 80px;
       height: 80px;
-      margin: 40px 38px 31px 0;
+      margin-top: 40px;
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
 
     &::after {
-      counter-increment: list 1;
-      content: counter(list) "";
-      font-family: var(--font-base, inherit);
+      content: counter(list) " ";
+      position: relative;
+      font-family: var(--font-second, inherit);
       font-size: 280px;
       line-height: 1;
       color: var(--bg-secondary, #000080);
       grid-column: 2 / 3;
       grid-row: 1 / -1;
+      right: 6px;
     }
   }
 
-  .details-list__item--one {
+  .details-list__item span {
+    position: relative;
+    grid-column: 1 / -1;
+    grid-row: 2 / 4;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 1440px) {
+  .details-list {
+    column-gap: 77px;
+  }
+
+  .details-list__item--eat {
+    margin-right: 2px;
+  }
+
+  .details-list__item--leaf {
     margin-right: 15px;
-    width: 230px;
   }
-
-  .details-list__item--two {
-    width: 246px;
-  }
-
-  .details-list__item--three {
-    width: 247px;
-  }
-
-  .details-list__item--four {
-    width: 249px;
-  }
-}
-
-.details-list__item--one {
-  --icon-details: url("../../icons/stack.svg#icon-leaf");
-}
-
-.details-list__item--two {
-  --icon-details: url("../../icons/stack.svg#icon-powder");
-}
-
-.details-list__item--three {
-  --icon-details: url("../../icons/stack.svg#icon-eat");
-}
-
-.details-list__item--four {
-  --icon-details: url("../../icons/stack.svg#icon-time");
 }

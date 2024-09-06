@@ -1,9 +1,28 @@
-.subproducts__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.subproducts-list__item {
+  border-bottom: 1px solid #cdcdcd;
+  display: flex;
+  flex-direction: column;
 }
 
-.subproducts-list__item {
-  border-bottom: 1px solod #cdcdcd;
+.subproducts-list__item:first-child {
+  border-top: 1px solid #cdcdcd;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .subproducts-list__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content 68px;
+    padding: 26px 5.36% 28px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .subproducts-list__item {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: subgrid;
+    margin: 0;
+    padding: 15px 0 16px;
+  }
 }

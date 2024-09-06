@@ -1,4 +1,12 @@
-.social__item {
+.social-item__link {
+  display: block;
+  min-height: 40px;
+  text-decoration: none;
+  color: inherit;
+  padding: 12px;
+  box-sizing: border-box;
+
+
   &::before {
     content: "";
     display: block;
@@ -26,7 +34,11 @@
   --icon: url("../../images/icon-tg.svg");
 }
 
-.social-item__link {
-  text-decoration: none;
-  color: inherit;
+.social-item__link:hover::before,
+.social-item__link:focus::before {
+  background-color: #68b738;
+}
+
+.social-item__link:active::before {
+  opacity: 0.3;
 }
