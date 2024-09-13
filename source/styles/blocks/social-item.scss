@@ -25,12 +25,12 @@
 }
 
 .social__item--youtube {
-  mask-size: 24px 17px;
+  mask-size: 24px 19px;
   --icon: url("../../images/icon-youtube.svg");
 }
 
 .social__item--tg {
-  mask-size: 20px 17px;
+  mask-size: 18px 17px;
   --icon: url("../../images/icon-tg.svg");
 }
 
@@ -41,4 +41,10 @@
 
 .social-item__link:active::before {
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .social-item__link {
+    padding: 8px 8px 12px 12px;
+  }
 }

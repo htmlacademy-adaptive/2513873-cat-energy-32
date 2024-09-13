@@ -10,7 +10,7 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 23px;
+  margin-top: 25px;
   align-self: center;
 }
 
@@ -22,11 +22,10 @@
 }
 
 .more-products__link {
-  min-width: 250px;
   text-align: center;
   text-decoration: none;
   color: var(--color-base, #fa8072);
-  margin-top: 51px;
+  margin-top: 13px;
 }
 
 @media (min-width: 768px) {
@@ -36,18 +35,37 @@
     line-height: 1.2;
     text-align: center;
     margin: 0;
+    margin-top: 26px;
   }
 
   .more-products__description {
-    font-size: 18px;
-    width: 250px;
+    font-size: 16px;
+    max-width: 170px;
     line-height: 1.13;
     text-align: center;
+    margin: 0;
+    margin-bottom: 26px;
   }
 
   .more-products__link {
-    width: 169px;
+    width: 77%;
     box-sizing: border-box;
     align-self: center;
+    margin-top: 33px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .more-products__title {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
+  .more-products__description {
+    margin-bottom: 35px;
+  }
+
+  .more-products__link {
+    width: 98.4%;
   }
 }

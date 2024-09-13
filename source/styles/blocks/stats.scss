@@ -7,12 +7,13 @@
   order: 1;
   width: 80px;
   text-align: center;
-  margin-top: -9px;
+  margin-top: -10px;
 }
 
 .stats__title--weight,
 .stats__title--time {
   background-color: var(--bg-tertiary, #000080);
+  margin-left: -2px;
 }
 
 .stats__description {
@@ -50,6 +51,7 @@
   .stats__title {
     font-size: 14px;
     background-color: var(--bg-primary, #000080);
+    margin-top: -9px;
   }
 
   .stats__title--weight {
@@ -63,8 +65,9 @@
   .stats__description {
     font-size: 30px;
     line-height: 1.23;
-    width: 172px;
+    width: 162px;
     margin: 0;
+    padding-bottom: 19px;
   }
 }
 

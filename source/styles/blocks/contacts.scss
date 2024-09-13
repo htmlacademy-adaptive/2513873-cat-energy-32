@@ -1,9 +1,16 @@
 .contacts__wrapper {
   margin: 0 auto;
-  padding: 0 20px;
+  margin-bottom: 10px;
+  padding: 20px 6.25%;
   display: flex;
+  gap: 16px;
   justify-content: space-between;
   align-items: center;
+}
+
+.contacts__wrapper--catalog {
+  padding-top: 31px;
+  margin-bottom: 0;
 }
 
 .contacts__title {
@@ -13,6 +20,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 }
 
 .contacts__address {
@@ -28,20 +36,17 @@
 .contacts__map-wrapper {
   position: relative;
   z-index: 0;
-}
-
-.contacts__map-online {
-  position: relative;
-  width: 100%;
-  border: none;
-  display: block;
-  margin-top: -362px;
+  margin-top: 17px;
 }
 
 @media (min-width: 768px) {
   .contacts__wrapper {
     margin: 0 auto;
-    padding: 60px 100px;
+    padding: 30px 70px 60px;
+  }
+
+  .contacts__wrapper--catalog {
+    padding-top: 60px;
   }
 
   .contacts__title {
@@ -61,8 +66,8 @@
     gap: 20px;
   }
 
-  .contacts__map-online {
-    margin-top: -400px;
+  .contacts__map-wrapper {
+    margin-top: 0;
   }
 }
 
@@ -72,24 +77,23 @@
     width: 565px;
     height: 199px;
     margin: 95px 0 0 110px;
-    padding: 60px 80px;
+    padding: 60px 75px 60px 79px;
     box-sizing: border-box;
     background-color: var(--bg-primary, #000080);
-    z-index: 1;
+    z-index: 2;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    column-gap: 87px;
+  }
+
+  .contacts__address {
+    text-align: left;
+    width: 161px;
   }
 
   .contacts__map-wrapper {
-    grid-column: 1 / 2;
+    grid-column: 1 / -1;
     grid-row: 1 / -1;
     margin-top: 0;
-  }
-
-  .contacts__map-online {
-    height: 400px;
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
-    margin: 0;
   }
 }

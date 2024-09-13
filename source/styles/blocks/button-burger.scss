@@ -1,12 +1,36 @@
 .button-burger {
+  background-color: var(--color-second, #000080);
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  cursor: pointer;
+  border: none;
   width: 24px;
   height: 24px;
-  background-color: var(--color-third, #000080);
-  background-image: url("../../icons/stack.svg#burger");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 24px 24px;
-  border: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 15px;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.button-burger--closed {
+  mask-image: url("../../icons/stack.svg#burger");
+  mask-size: 24px 24px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.button-burger--opened {
+  mask-image: url("../../icons/stack.svg#close");
+  mask-size: 18px 18px;
 }
