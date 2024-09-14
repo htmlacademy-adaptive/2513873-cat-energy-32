@@ -17,6 +17,8 @@
 }
 
 .stats__description {
+  position: relative;
+  width: 124px;
   font-family: var(--font-second, inherit);
   font-size: 24px;
   line-height: 1;
@@ -25,20 +27,15 @@
   border: 1px solid #cdcdcd;
   border-radius: 2px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .stats__description--weight {
-  position: relative;
-  width: 124px;
   padding: 14px 30px 17px;
-  box-sizing: border-box;
 }
 
 .stats__description--time {
-  position: relative;
-  width: 124px;
   padding: 14px 20px 17px;
-  box-sizing: border-box;
 }
 
 @media (max-width: 767px) {

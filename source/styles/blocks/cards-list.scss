@@ -1,6 +1,4 @@
 .cards-list__item {
-  // display: flex;
-  // flex-direction: column;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: min-content 1fr min-content;
@@ -37,7 +35,6 @@
 
 @media (min-width: 768px) {
   .cards-list__item {
-    // min-width: 324px;
     display: flex;
     flex-direction: column;
     padding: 20px 5.2% 40px;
@@ -77,6 +74,7 @@
     min-width: 245px;
     justify-content: flex-end;
     row-gap: 23px;
+    margin-top: 77px;
 
     &::before {
       width: 60px;

@@ -21,14 +21,14 @@
           <picture>
             <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-            <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта КэтЭнерджи">
+            <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта КэтЭнерджи">
           </picture>
         </a>
-        <a class="header__logo-title logo logo--title" href="index.html">
+        <a class="header__logo-title logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-desktop.svg">
             <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text-tablet.svg">
-            <img class="logo__description" src="images/logo-text-mobile.svg" width="101" height="18" alt="Надпись Cat Energy">
+            <img src="images/logo-text-mobile.svg" width="101" height="18" alt="Надпись Cat Energy">
           </picture>
         </a>
         <button class="header__burger button-burger button-burger--closed" type="button">
@@ -37,13 +37,13 @@
       </div>
       <nav class="header__main-navigation main-navigation main-navigation--closed">
         <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--head">
+          <li class="main-navigation__item">
             <a class="main-navigation__link main-navigation__link--current" href="index.html">Главная</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--products">
+          <li class="main-navigation__item">
             <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--programs">
+          <li class="main-navigation__item">
             <a class="main-navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
@@ -58,7 +58,7 @@
             <picture>
               <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-hero-desktop@1x.png 1x, images/index-hero-desktop@2x.png 2x">
               <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-hero-tablet@1x.png 1x, images/index-hero-tablet@2x.png 2x">
-              <img class="promo__image" src="images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png 2x" width="280" height="270" alt="Корм для котов со вкусом курицы">
+              <img src="images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png 2x" width="280" height="270" alt="Корм для котов со вкусом курицы">
             </picture>
           </div>
           <a class="promo__link button button--accent button--promo" href="#">Подобрать программу</a>
@@ -155,28 +155,28 @@
             <img class="contacts__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи">
           </picture>
         </div>
-        <iframe class="contacts__map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247737302!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725632349929!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая конюшенная, дом 19/8, Санкт-Петербург">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247737302!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725632349929!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая конюшенная, дом 19/8, Санкт-Петербург">
         </iframe>
       </section>
     </main>
     <footer class="body__footer footer">
       <div class="footer__wrapper">
-        <a class="footer__logo-title logo logo--title" href="#">
+        <a class="footer__logo-title logo" href="#">
           <img class="logo__description logo__description--footer" src="images/logo-text-mobile.svg" width="128" height="24" alt="Надпись Cat Energy">
         </a>
-        <ul class="footer__social social">
-          <li class="social__item social__item--vk social-item">
-            <a class="social-item__link" href="https://vk.com/htmlacademy">
+        <ul class="footer__social">
+          <li class="footer__social-item social-item">
+            <a class="social-item__link social-item__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">VKontakte</span>
             </a>
           </li>
-          <li class="social__item social__item--youtube social-item">
-            <a class="social-item__link" href="https://www.youtube.com/user/htmlacademyru">
+          <li class="footer__social-item social-item">
+            <a class="social-item__link social-item__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
-          <li class="social__item social__item--tg social-item">
-            <a class="social-item__link" href="https://t.me/htmlacademy">
+          <li class="footer__social-item social-item">
+            <a class="social-item__link social-item__link--twitter" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>

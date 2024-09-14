@@ -75,7 +75,7 @@
   .main-navigation__link--current,
   .main-navigation__link-catalog--current {
     text-decoration-line: underline;
-    text-decoration-color: #68b738;
+    text-decoration-color: var(--bg-accent, #000080);
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
     text-underline-position: under;
@@ -100,11 +100,8 @@
   }
 
   .main-navigation__link--current {
-    text-decoration: underline;
     text-decoration-color: var(--color-third, #000080);
-    text-decoration-thickness: 2px;
     text-underline-offset: 8px;
-    text-underline-position: under;
   }
 
   .main-navigation__list {

@@ -132,8 +132,8 @@
 
   .card__subtitle {
     font-size: 20px;
-    // grid-column: 1 / 2;
-    // grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 
   .card__description--subproducts {
@@ -203,16 +203,11 @@
 
   .card__description {
     min-width: 169px;
-    // margin-bottom: 22px;
   }
 
   .card__definition {
     padding: 5px 0 7px;
   }
-
-  // .card__definition dt {
-  //   padding: 1px 0;
-  // }
 
   .card__definition--subproduct {
     display: block;

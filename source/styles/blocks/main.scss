@@ -3,7 +3,7 @@
   position: relative;
   text-align: center;
   background-color: #3b7d1d;
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, rgba(255, 255, 255, 1) 37%), image-set("../../images/index-background-mobile@2x.webp" 2x type("image/webp"), "../../images/index-background-mobile@1x.webp" 1x type("image/webp"), "../../images/index-background-mobile@2x.jpg" 2x type("image/jpg"), "../../images/index-background-mobile@1x.jpg" 1x type("image/jpg")), linear-gradient(to right, #4f4e54 50%, #424147 50%);
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, rgba(255, 255, 255, 1) 37%), image-set("../images/index-background-mobile@2x.webp" 2x type("image/webp"), "../images/index-background-mobile@1x.webp" 1x type("image/webp"), "../images/index-background-mobile@2x.jpg" 2x type("image/jpg"), "../images/index-background-mobile@1x.jpg" 1x type("image/jpg")), linear-gradient(to right, #4f4e54 50%, #424147 50%);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: contain, 320px 302px, contain;
