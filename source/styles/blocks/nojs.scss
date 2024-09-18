@@ -18,6 +18,8 @@
   }
 
   .main-navigation__list {
+    min-width: 767px;
+    display: block;
     position: relative;
     top: 0;
   }

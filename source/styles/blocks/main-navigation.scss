@@ -39,11 +39,8 @@
     background-color: var(--bg-primary, #000080);
     position: absolute;
     top: 65px;
+    right: 0;
     z-index: 1;
-  }
-
-  .main-navigation {
-    width: 100%;
   }
 
   .main-navigation--closed .main-navigation__list {
