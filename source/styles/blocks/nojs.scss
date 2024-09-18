@@ -17,10 +17,11 @@
     }
 
     .main-navigation__list {
-      min-width: 767px;
+      min-width: 100vw;
       display: block;
       position: relative;
       top: 0;
+      margin-bottom: 5px;
     }
   }
 }
