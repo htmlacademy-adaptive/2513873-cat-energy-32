@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Функциональное питание для котов. Ветеринарная диета. Каталог продукции и дополнительных товаров">
   <title>CatEnergy. Функциональное питание для котов.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/Lato/Lato-Regular.woff2Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Oswald/Oswald-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -13,41 +16,43 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page-catalog__body body">
+<body class="page-catalog__body body nojs">
   <div class="body__wrapper">
-    <header class="body__header body__header--catalog header">
-      <div class="header__logo-wrapper">
-        <a class="header__logo header__logo--catalog logo logo--image" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-            <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта КэтЭнерджи">
-          </picture>
-        </a>
-        <a class="header__logo-title header__logo-title--catalog logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-desktop.svg">
-            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text-tablet.svg">
-            <img src="images/logo-text-mobile.svg" width="101" height="18" alt="Надпись Cat Energy">
-          </picture>
-        </a>
-        <button class="header__burger button-burger button-burger--closed" type="button">
-          <span class="visually-hidden">Открыть меню навигации</span>
-        </button>
+    <header class="body__header header">
+      <div class="header__wrapper header__wrapper--catalog">
+        <div class="header__logo-wrapper header__logo-wrapper--catalog">
+          <a class="header__logo header__logo--catalog logo logo--image" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+              <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+              <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта КэтЭнерджи">
+            </picture>
+          </a>
+          <a class="header__logo-title header__logo-title--catalog logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-desktop.svg">
+              <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text-tablet.svg">
+              <img src="images/logo-text-mobile.svg" width="101" height="18" alt="Надпись Cat Energy">
+            </picture>
+          </a>
+          <button class="header__burger button-burger button-burger--closed" type="button">
+            <span class="visually-hidden">Открыть меню навигации</span>
+          </button>
+        </div>
+        <nav class="header__main-navigation main-navigation main-navigation--opened">
+          <ul class="main-navigation__list main-navigation__list--catalog">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link-catalog" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link-catalog main-navigation__link-catalog--current" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link-catalog" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__main-navigation main-navigation main-navigation--closed">
-        <ul class="main-navigation__list main-navigation__list--catalog">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link-catalog" href="index.html">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link-catalog main-navigation__link-catalog--current" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link-catalog" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="body__main main">
       <section class="main__cards cards">
@@ -58,8 +63,11 @@
               <h2 class="card__title">
                 <a class="card__link" href="#">Cat Energy PRO 500 г</a>
               </h2>
-              <a class="card__image-link" href="#">
+              <a class="card__image-link" href="#" tabindex="-1">
                 <picture>
+                  <source media="(min-width: 1440px)" width="169" height="210" type="image/webp" srcset="images/catalog-chiken-500-desktop@1x.webp 1x, images/catalog-chiken-500-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="161" height="172" type="image/webp" srcset="images/catalog-chiken-500-tablet@1x.webp 1x, images/catalog-chiken-500-tablet@2x.webp 2x">
+                  <source width="68" height="86" type="image/webp" srcset="images/catalog-chiken-500-mobile@1x.webp 1x, images/catalog-chiken-500-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="169" height="210" type="image/png" srcset="images/catalog-chiken-500-desktop@1x.png 1x, images/catalog-chiken-500-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="161" height="172" type="image/png" srcset="images/catalog-chiken-500-tablet@1x.png 1x, images/catalog-chiken-500-tablet@2x.png 2x">
                   <img class="card__image card__image--small" src="images/catalog-chiken-500-mobile@1x.png" srcset="images/catalog-chiken-500-mobile@2x.png" width="68" height="86" alt="Корм для котов со вкусом курицы 500 грамм">
@@ -67,7 +75,7 @@
               </a>
               <dl class="card__description">
                 <div class="card__definition">
-                  <dt>Масса</dt>
+                  <dt class="card__definition-small">Масса</dt>
                   <dd>500 г</dd>
                 </div>
                 <div class="card__definition">
@@ -85,8 +93,11 @@
               <h2 class="card__title">
                 <a class="card__link" href="#">Cat Energy PRO 1000 г</a>
               </h2>
-              <a class="card__image-link card__image-link--pro" href="#">
+              <a class="card__image-link card__image-link--pro" href="#" tabindex="-1">
                 <picture>
+                  <source media="(min-width: 1440px)" width="172" height="196" type="image/webp" srcset="images/catalog-chiken-1000-desktop@1x.webp 1x, images/catalog-chiken-1000-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="168" height="206" type="image/webp" srcset="images/catalog-chiken-1000-tablet@1x.webp 1x, images/catalog-chiken-1000-tablet@2x.webp 2x">
+                  <source width="84" height="100" type="image/webp" srcset="images/catalog-chiken-1000-mobile@1x.webp 1x, images/catalog-chiken-1000-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/catalog-chiken-1000-desktop@1x.png 1x, images/catalog-chiken-1000-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/catalog-chiken-1000-tablet@1x.png 1x, images/catalog-chiken-1000-tablet@2x.png 2x">
                   <img class="card__image" src="images/catalog-chiken-1000-mobile@1x.png" srcset="images/catalog-chiken-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом курицы 1000 грамм">
@@ -112,8 +123,11 @@
               <h2 class="card__title">
                 <a class="card__link" href="#">Cat Energy PRO 500 г</a>
               </h2>
-              <a class="card__image-link" href="#">
+              <a class="card__image-link" href="#" tabindex="-1">
                 <picture>
+                  <source media="(min-width: 1440px)" width="169" height="210" type="image/webp" srcset="images/catalog-fish-500-desktop@1x.webp 1x, images/catalog-fish-500-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="163" height="174" type="image/webp" srcset="images/catalog-fish-500-tablet@1x.webp 1x, images/catalog-fish-500-tablet@2x.webp 2x">
+                  <source width="68" height="86" type="image/webp" srcset="images/catalog-fish-500-mobile@1x.webp 1x, images/catalog-fish-500-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="169" height="210" type="image/png" srcset="images/catalog-fish-500-desktop@1x.png 1x, images/catalog-fish-500-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-fish-500-tablet@1x.png 1x, images/catalog-fish-500-tablet@2x.png 2x">
                   <img class="card__image card__image--small" src="images/catalog-fish-500-mobile@1x.png" srcset="images/catalog-fish-500-mobile@2x.png" width="68" height="86" alt="Корм для котов со вкусом рыбы 500 грамм">
@@ -139,8 +153,11 @@
               <h2 class="card__title">
                 <a class="card__link" href="#">Cat Energy PRO 1000 г</a>
               </h2>
-              <a class="card__image-link" href="#">
+              <a class="card__image-link" href="#" tabindex="-1">
                 <picture>
+                  <source media="(min-width: 1440px)" width="172" height="196" type="image/webp" srcset="images/catalog-fish-1000-desktop@1x.webp 1x, images/catalog-fish-1000-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="168" height="206" type="image/webp" srcset="images/catalog-fish-1000-tablet@1x.webp 1x, images/catalog-fish-1000-tablet@2x.webp 2x">
+                  <source width="84" height="100" type="image/webp" srcset="images/catalog-fish-1000-mobile@1x.webp 1x, images/catalog-fish-1000-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/catalog-fish-1000-desktop@1x.png 1x, images/catalog-fish-1000-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/catalog-fish-1000-tablet@1x.png 1x, images/catalog-fish-1000-tablet@2x.png 2x">
                   <img class="card__image" src="images/catalog-fish-1000-mobile@1x.png" srcset="images/catalog-fish-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом рыбы 1000 грамм">
@@ -166,8 +183,11 @@
               <h2 class="card__title">
                 <a class="card__link" href="#">Cat Energy Slim 500 г</a>
               </h2>
-              <a class="card__image-link" href="#">
+              <a class="card__image-link" href="#" tabindex="-1">
                 <picture>
+                  <source media="(min-width: 1440px)" width="169" height="210" type="image/webp" srcset="images/catalog-buckwheat-500-desktop@1x.webp 1x, images/catalog-buckwheat-500-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="161" height="171" type="image/webp" srcset="images/catalog-buckwheat-500-tablet@1x.webp 1x, images/catalog-buckwheat-500-tablet@2x.webp 2x">
+                  <source width="68" height="86" type="image/webp" srcset="images/catalog-buckwheat-500-mobile@1x.webp 1x, images/catalog-buckwheat-500-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="169" height="210" type="image/png" srcset="images/catalog-buckwheat-500-desktop@1x.png 1x, images/catalog-buckwheat-500-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="161" height="171" type="image/png" srcset="images/catalog-buckwheat-500-tablet@1x.png 1x, images/catalog-buckwheat-500-tablet@2x.png 2x">
                   <img class="card__image card__image--small" src="images/catalog-buckwheat-500-mobile@1x.png" srcset="images/catalog-buckwheat-500-mobile@2x.png" width="68" height="86" alt="Корм для котов со вкусом гречки 500 грамм">
@@ -193,8 +213,11 @@
               <h2 class="card__title">
                 <a class="card__link" href="#">Cat Energy Slim 1000 г</a>
               </h2>
-              <a class="card__image-link" href="#">
+              <a class="card__image-link" href="#" tabindex="-1">
                 <picture>
+                  <source media="(min-width: 1440px)" width="172" height="196" type="image/webp" srcset="images/catalog-buckwheat-1000-desktop@1x.webp 1x, images/catalog-buckwheat-1000-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="168" height="206" type="image/webp" srcset="images/catalog-buckwheat-1000-tablet@1x.webp 1x, images/catalog-buckwheat-1000-tablet@2x.webp 2x">
+                  <source width="84" height="100" type="image/webp" srcset="images/catalog-buckwheat-1000-mobile@1x.webp 1x, images/catalog-buckwheat-1000-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/catalog-buckwheat-1000-desktop@1x.png 1x, images/catalog-buckwheat-1000-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/catalog-buckwheat-1000-tablet@1x.png 1x, images/catalog-buckwheat-1000-tablet@2x.png 2x">
                   <img class="card__image" src="images/catalog-buckwheat-1000-mobile@1x.png" srcset="images/catalog-buckwheat-1000-mobile@2x.png" width="84" height="100" alt="Корм для котов со вкусом гречки 1000 грамм">
@@ -220,8 +243,11 @@
               <h2 class="card__title">
                 <a class="card__link" href="#">Cat Energy Slim 500 г</a>
               </h2>
-              <a class="card__image-link" href="#">
+              <a class="card__image-link" href="#" tabindex="-1">
                 <picture>
+                  <source media="(min-width: 1440px)" width="169" height="210" type="image/webp" srcset="images/catalog-rice-500-desktop@1x.webp 1x, images/catalog-rice-500-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="163" height="174" type="image/webp" srcset="images/catalog-rice-500-tablet@1x.webp 1x, images/catalog-rice-500-tablet@2x.webp 2x">
+                  <source width="72" height="90" type="image/webp" srcset="images/catalog-rice-500-mobile@1x.webp 1x, images/catalog-rice-500-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="169" height="210" type="image/png" srcset="images/catalog-rice-500-desktop@1x.png 1x, images/catalog-rice-500-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-rice-500-tablet@1x.png 1x, images/catalog-rice-500-tablet@2x.png 2x">
                   <img class="card__image card__image--small" src="images/catalog-rice-500-mobile@1x.png" srcset="images/catalog-rice-500-mobile@2x.png" width="68" height="86" alt="Корм для котов со вкусом риса 500 грамм">
@@ -244,7 +270,9 @@
               <button class="card__button button button--accent" type="submit">Заказать</button>
             </li>
             <li class="cards-list__item cards-list__item--more more-products">
-              <h3 class="more-products__title">Показать еще 100500 товаров</h3>
+              <h3 class="more-products__title">
+                <a class="more-products__title-link" href="#" tabindex="-1">Показать еще 100500 товаров</a>
+              </h3>
               <p class="more-products__description">На самом деле вкусов гораздо больше!</p>
               <a class="more-products__link button button--secondary" href="#">Показать все</a>
             </li>
@@ -272,7 +300,7 @@
               </li>
               <li class="subproducts-list__item card">
                 <h3 class="card__subtitle">Питьевая вода</h3>
-                <dl class="card__description card__description--subproducts">
+                <dl class="card__description card__description--subproducts card__description--liters">
                   <div class="card__definition card__definition--subproduct">
                     <dt class="visually-hidden">Количество</dt>
                     <dd>5 литров</dd>
@@ -341,14 +369,19 @@
           </address>
         </div>
         <div class="contacts__map-wrapper">
-          <picture>
-            <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-            <img class="contacts__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи">
-          </picture>
+          <div class="contacts__picture-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+              <source width="320" height="362" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+              <img class="contacts__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Карта проезда к офису компании Кэт Энерджи" loading="lazy">
+            </picture>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247737302!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725632349929!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая конюшенная, дом 19/8, Санкт-Петербург">
+          </iframe>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247737302!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725632349929!5m2!1sru!2sru" width="280" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая конюшенная, дом 19/8, Санкт-Петербург">
-        </iframe>
       </section>
     </main>
     <footer class="body__footer footer">
@@ -368,8 +401,8 @@
             </a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link social-item__link--twitter" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Twitter</span>
+            <a class="social-item__link social-item__link--tg" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
             </a>
           </li>
         </ul>

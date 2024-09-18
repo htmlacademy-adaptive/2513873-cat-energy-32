@@ -15,6 +15,7 @@
     mask-image: var(--icon);
     mask-repeat: no-repeat;
     mask-position: 50% 50%;
+    mask-size: 24px 19px;
     background-color: #666666;
   }
 }
@@ -29,7 +30,7 @@
   --icon: url("../../images/icon-youtube.svg");
 }
 
-.social-item__link--twitter {
+.social-item__link--tg {
   mask-size: 18px 17px;
   --icon: url("../../images/icon-tg.svg");
 }
@@ -44,7 +45,7 @@
 }
 
 @media (min-width: 768px) {
-  .social-item__link {
-    padding: 8px 8px 12px 12px;
+  .social-item__link--tg {
+    mask-size: 24px 19px;
   }
 }

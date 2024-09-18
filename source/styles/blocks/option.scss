@@ -8,7 +8,7 @@
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
 }
 
@@ -107,16 +107,18 @@
   }
 
   .option__list {
-    margin-bottom: 9px;
+    max-width: 870px;
+    margin: 0 auto;
     gap: 30px;
   }
 
   .option__item {
-    padding: 77px 44% 33px 7.35%;
-    display: grid;
-    grid-template-columns: 100% min-content;
-    grid-template-rows: repeat(3, min-content);
     margin: 0;
+    max-width: 870px;
+    padding: 75px 52px 38px;
+    display: grid;
+    grid-template-columns: 340px min-content;
+    grid-template-rows: repeat(3, min-content);
   }
 
   .option__item--slim {
@@ -128,7 +130,7 @@
       height: 200px;
       grid-column: 2 / 3;
       grid-row: 1 / -1;
-      left: 25%;
+      left: 27%;
       top: 6%;
     }
 
@@ -141,8 +143,8 @@
       background-size: 140px 194px;
       grid-column: 2 / 3;
       grid-row: 1 / -1;
-      left: 40%;
-      top: 5px;
+      left: 41%;
+      top: 2.4%;
     }
   }
 
@@ -155,7 +157,7 @@
       height: 200px;
       grid-column: 2 / 3;
       grid-row: 1 / -1;
-      left: 18%;
+      left: 20%;
       top: 6%;
     }
 
@@ -166,7 +168,7 @@
       background-size: 268px 200px;
       grid-column: 2 / 3;
       grid-row: 1 / -1;
-      left: 5.4%;
+      left: 7.4%;
       top: 6%;
     }
   }
@@ -196,11 +198,11 @@
 
 @media (min-width: 1440px) {
   .option__wrapper {
+    max-width: 1700px;
     padding: 0 7.63%;
   }
 
   .option__list {
-    margin-bottom: 71px;
     flex-direction: row;
     column-gap: 6.6%;
   }
@@ -208,6 +210,7 @@
   .option__item {
     width: 46.7%;
     margin: 0;
+    margin-bottom: 41px;
     padding: 41px 52px 47px;
     display: flex;
     flex-direction: column;

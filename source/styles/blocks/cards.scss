@@ -9,7 +9,7 @@
   font-weight: 400;
   color: var(--color-second, #fa5072);
   margin: 0;
-  padding: 26px 6.4% 39px;
+  padding: 26px 6.4% 41px;
   box-sizing: border-box;
 }
 
@@ -29,13 +29,14 @@
 @media (min-width: 768px) {
   .cards__wrapper {
     padding: 0 3.9%;
+    margin-bottom: 94px;
   }
 
   .cards__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 60px;
+    gap: 59px 60px;
     margin: 0;
   }
 
@@ -43,7 +44,7 @@
     font-size: 60px;
     padding: 0;
     padding-top: 11px;
-    margin-bottom: 78px;
+    margin-bottom: 84px;
   }
 }
 
@@ -60,6 +61,7 @@
 @media (min-width: 1440px) {
   .cards__wrapper {
     padding: 0 7.63%;
+    margin-bottom: 44px;
   }
 
   .cards__title {
@@ -67,7 +69,7 @@
   }
 
   .cards__list {
-    gap: 66px 80px;
+    gap: 63px 80px;
     justify-content: flex-start;
   }
 }

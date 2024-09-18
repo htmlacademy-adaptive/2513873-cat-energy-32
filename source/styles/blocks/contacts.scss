@@ -1,6 +1,6 @@
 .contacts__wrapper {
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: -11px;
   padding: 20px 6.25%;
   display: flex;
   gap: 16px;
@@ -29,14 +29,42 @@
   font-style: normal;
 }
 
-.contacts__image {
-  display: block;
-}
-
 .contacts__map-wrapper {
   position: relative;
   z-index: 0;
   margin-top: 17px;
+  display: grid;
+  grid-template-columns: 1fr 49px 1fr;
+  grid-template-rows: 1fr 75px 1fr;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 57px;
+    height: 53px;
+    background-image: image-set("../images/map-pin@2x.webp" 2x type("image/webp"), "../images/map-pin@1x.webp" 1x type("image/webp"), "../images/map-pin@2x.png" 2x type("image/png"), "../images/map-pin@1x.png" 1x type("image/png"));
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 2;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.contacts__picture-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.contacts__map-wrapper iframe {
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.contacts__image {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -68,6 +96,21 @@
 
   .contacts__map-wrapper {
     margin-top: 0;
+    grid-template-columns: 1fr 98px 1fr;
+    grid-template-rows: 1fr 103px 1fr;
+
+    &::after {
+      width: 113px;
+      height: 106px;
+      background-image: image-set("../images/map-pin-tablet@2x.webp" 2x type("image/webp"), "../images/map-pin-tablet@1x.webp" 1x type("image/webp"), "../images/map-pin-tablet@2x.png" 2x type("image/png"), "../images/map-pin-tablet@1x.png" 1x type("image/png"));
+      background-size: 113px 106px;
+    }
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1439px) {
+  .contacts__wrapper {
+    max-width: 600px;
   }
 }
 
@@ -75,14 +118,14 @@
   .contacts__wrapper {
     position: relative;
     width: 565px;
-    height: 199px;
-    margin: 95px 0 0 110px;
+    height: fit-content;
+    margin: 0;
     padding: 60px 75px 60px 79px;
     box-sizing: border-box;
     background-color: var(--bg-primary, #000080);
     z-index: 2;
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     column-gap: 87px;
   }
 
@@ -95,5 +138,8 @@
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     margin-top: 0;
+    min-width: 100%;
+    height: 100%;
+    min-height: 400px;
   }
 }

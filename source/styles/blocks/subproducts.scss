@@ -10,7 +10,7 @@
   line-height: 1;
   font-weight: 400;
   color: var(--color-second, #fa8072);
-  margin: 25px 0 36px;
+  margin: 25px 0 35px;
   width: fit-content;
   background: var(--bg-primary, #000080);
   box-shadow: -40px 0 0 var(--bg-primary, #000080), 40px 0 0 var(--bg-primary, #000080);
@@ -40,6 +40,7 @@
 .subproducts__stock {
   font-size: 16px;
   line-height: 1.25;
+  background-color: #68b738;
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), image-set("../images/stock-mobile@2x.webp" 2x type("image/webp"), "../images/stock-mobile@1x.webp" 1x type("image/webp"), "../images/stock-mobile@2x.jpg" 2x type("image/jpg"), "../images/stock-mobile@1x.jpg" 1x type("image/jpg"));
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -67,7 +68,7 @@
 @media (min-width: 768px) {
   .subproducts__wrapper {
     margin: 0;
-    padding: 41px 3.9% 0;
+    padding: 0 3.9%;
   }
 
   .subproducts__title {
@@ -146,8 +147,8 @@
 
   .subproducts__list {
     display: grid;
-    grid-template-columns: 284px auto max-content min-content;
-    grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+    grid-template-columns: 284px auto auto min-content;
+    grid-template-rows: minmax(20px, 1fr);
     width: 896px;
     column-gap: 4.46%;
     padding: 0;
@@ -156,9 +157,9 @@
 
   .subproducts__stock {
     width: 245px;
-    height: 288px;
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), image-set("../images/stock-desktop@2x.webp" 2x type("image/webp"), "../images/stock-desktop@1x.webp" 1x type("image/webp"), "../images/stock-desktop@2x.jpg" 2x type("image/jpg"), "../images/stock-desktop@1x.jpg" 1x type("image/jpg"));
-    background-size: 245px 288px;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), image-set("../images/stock-desktop@2x.webp" 2x type("image/webp"), "../images/stock-desktop@1x.webp" 1x type("image/webp"), "../images/stock-desktop@2x.jpg" 2x type("image/jpg"), "../images/stock-desktop@1x.jpg" 1x type("image/jpg")), linear-gradient(to bottom, #bfbfbf 10%, #929292 10%);
+    background-size: 245px;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     display: flex;
@@ -166,7 +167,8 @@
     justify-content: center;
     align-items: center;
     gap: 46px;
-    padding: 0;
+    padding: 45px 26px 40px;
+    box-sizing: border-box;
 
     &::before {
       margin: 0;

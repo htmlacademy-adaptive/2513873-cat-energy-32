@@ -31,17 +31,15 @@
 }
 
 .stats__description--weight {
-  padding: 14px 30px 17px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 14px 40px 17px;
 }
 
 .stats__description--time {
+  margin: 0;
+  margin-top: 10px;
   padding: 14px 20px 17px;
-}
-
-@media (max-width: 767px) {
-  .stats dd {
-    margin: 0;
-  }
 }
 
 @media (min-width: 768px) {
@@ -52,10 +50,12 @@
   }
 
   .stats__title--weight {
+    margin-left: 0;
     width: 114px;
   }
 
   .stats__title--time {
+    margin-left: 0;
     width: 142px;
   }
 
@@ -63,7 +63,6 @@
     font-size: 30px;
     line-height: 1.23;
     width: 162px;
-    margin: 0;
     padding-bottom: 19px;
   }
 }
@@ -76,5 +75,10 @@
   .stats__description--weight,
   .stats__description--time {
     width: 162px;
+  }
+
+  .stats__title--time {
+    margin-right: 13px;
+    margin-left: 13px;
   }
 }

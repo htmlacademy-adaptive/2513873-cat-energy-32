@@ -29,29 +29,24 @@
   gap: 17px;
   align-items: center;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
-    width: 24px;
+    min-width: 32px;
     height: 12px;
     background-color: #000000;
-    mask-image: url("../../icons/stack.svg#arrow");
+    mask-image: url("../../icons/stack.svg#arrow-big");
     mask-repeat: no-repeat;
-    mask-position: 50% 50%;
-    mask-size: 24px 12px;
-    transform-origin: left center;
+    mask-position: -8px;
   }
 }
 
-.option-item__link:hover::after {
-  transform: scaleX(1.35);
-}
-
-.option-item__link:active {
-  opacity: 0.3;
-}
-
-.option-item__link:active::after {
-  background-color: rgba(0, 0, 0, 0.3);
+.option-item__link:hover::after,
+.option-item__link:focus::after {
+  mask-position: 0;
 }
 
 @media (max-width: 767px) {
