@@ -1,0 +1,27 @@
+.nojs {
+  @media (max-width: 767px) {
+    .header__logo {
+      margin-right: 20px;
+    }
+
+    .header__logo-wrapper {
+      margin-left: 100px;
+    }
+
+    .header__logo-title {
+      padding-bottom: 0;
+    }
+
+    .button-burger {
+      opacity: 0;
+    }
+
+    .main-navigation__list {
+      min-width: 100vw;
+      display: block;
+      position: relative;
+      top: 0;
+      margin-bottom: 5px;
+    }
+  }
+}

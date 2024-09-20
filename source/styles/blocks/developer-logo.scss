@@ -1,0 +1,14 @@
+.developer-logo__text {
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .developer-logo__text {
+    margin-bottom: 6px;
+    margin-left: 7px;
+  }
+
+  .developer-logo__image {
+    margin-bottom: 6px;
+  }
+}

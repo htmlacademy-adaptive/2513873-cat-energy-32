@@ -1,0 +1,19 @@
+.stock__description {
+  text-align: center;
+  margin: 0 58px 0 57px;
+}
+
+@media (min-width: 768px) {
+  .stock__description {
+    margin: 0;
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .stock__description {
+    margin: 0;
+    text-align: center;
+  }
+}

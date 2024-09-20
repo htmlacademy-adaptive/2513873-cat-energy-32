@@ -1,0 +1,137 @@
+.promo__wrapper {
+  margin: 0 auto;
+  padding: 22px 6.25% 0;
+  box-sizing: border-box;
+}
+
+.promo__title {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 25px 0;
+  padding-bottom: 4px;
+}
+
+.promo__picture {
+  height: 270px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.promo__link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  margin: -23px auto 20px;
+}
+
+@media (min-width: 768px) {
+  .promo__wrapper {
+    margin: 0 auto;
+    padding: 0 3.91%;
+    display: grid;
+    grid-template-columns: 90px 411px 208px;
+    grid-template-rows: repeat(4, min-content);
+  }
+
+  .promo__title {
+    color: var(--color-second, #fa8072);
+    font-size: 60px;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 15px;
+    grid-column: 2 / 3;
+  }
+
+  .promo__slogan {
+    color: var(--color-second, #fa8072);
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+    grid-column: 2 / 3;
+    margin-bottom: 17px;
+  }
+
+  .promo__picture {
+    height: 609px;
+    margin: 0;
+    margin-right: 5px;
+    grid-column: 1 / -1;
+    grid-row: 3 / 5;
+  }
+
+  .promo__link {
+    width: 244px;
+    margin: 0;
+    margin-top: 30px;
+    margin-right: -35px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1439px) {
+  .promo__wrapper {
+    max-width: 1050px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo__wrapper {
+    margin-bottom: 82px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 80px 367px 552px;
+    grid-template-rows: repeat(3, min-content);
+  }
+
+  .promo__title {
+    text-align: left;
+    margin-top: 51px;
+    z-index: 6;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .promo__slogan {
+    color: var(--color-second, #fa8072);
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-bottom: 52px;
+    padding: 0;
+  }
+
+  .promo__picture {
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    margin-top: -30px;
+    z-index: 5;
+    box-sizing: border-box;
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+  }
+
+  .promo__link {
+    margin: 0;
+    margin-bottom: 186px;
+    padding: 14px 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}

@@ -1,7 +1,8 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Вероника Неброева](https://up.htmlacademy.ru/adaptive/32/user/2513873).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Мой проект КэтЭнерджи](https://kleosky.github.io/2513873-cat-energy-32/).
 
 ---
 
