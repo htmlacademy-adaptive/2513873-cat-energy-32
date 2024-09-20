@@ -78,21 +78,30 @@
   }
 }
 
+@media (min-width: 960px) and (max-width: 1439px) {
+  .header__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: 1440px) {
   .header__wrapper {
     position: relative;
-    max-width: 1700px;
-    gap: 46%;
+    justify-content: space-between;
+    gap: 539px;
     margin: 55px auto 58px;
     padding: 0 7.1%;
   }
 
   .header__wrapper--catalog {
-    gap: 45.5%;
+    &::after {
+      background-image: none;
+    }
   }
 
   .header__logo-wrapper {
-    margin-left: 8px;
     position: relative;
     z-index: 1;
   }

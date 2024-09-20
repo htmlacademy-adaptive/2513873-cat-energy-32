@@ -46,8 +46,8 @@
 
 @media (min-width: 540px) and (max-width: 767px) {
   .details-list__item {
-    width: 472px;
     align-self: center;
+    max-width: 560px;
   }
 }
 

@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .contacts__wrapper {
+    max-width: 560px;
+  }
+}
+
 .contacts__wrapper--catalog {
   padding-top: 31px;
   margin-bottom: 0;
@@ -90,7 +96,7 @@
 
 @media (min-width: 960px) and (max-width: 1439px) {
   .contacts__wrapper {
-    max-width: 600px;
+    max-width: 870px;
   }
 }
 
@@ -112,6 +118,7 @@
   .contacts__address {
     text-align: left;
     width: 161px;
+    gap: 18px;
   }
 
   .contacts__map-wrapper {

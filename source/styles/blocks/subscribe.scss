@@ -15,7 +15,7 @@
   margin: 10px 0 22px;
   width: fit-content;
   background-color: var(--bg-primary, #000080);
-  box-shadow: -40px 0 0 var(--bg-primary, #000080), 40px 0 0 var(--bg-primary, #000080);
+  box-shadow: -20px 0 0 var(--bg-primary, #000080), 40px 0 0 var(--bg-primary, #000080);
 
   &::before {
     content: "";
@@ -25,6 +25,7 @@
     background-color: var(--bg-accent, #000080);
     box-shadow: 100vw 0 0 var(--bg-accent, #000080);
     top: 50%;
+    right: 100%;
     z-index: -1;
   }
 }
@@ -47,10 +48,7 @@
   .subscribe__title {
     font-size: 32px;
     margin: 21px 0 52px;
-
-    &::before {
-      right: 100%;
-    }
+    box-shadow: -40px 0 0 var(--bg-primary, #000080), 40px 0 0 var(--bg-primary, #000080);
   }
 
   .subscribe__description {
@@ -86,10 +84,6 @@
 }
 
 @media (min-width: 1920px) {
-  .subscribe__title {
-    left: 50%;
-  }
-
   .subscribe__description {
     position: relative;
     left: 4%;

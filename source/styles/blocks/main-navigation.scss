@@ -118,11 +118,12 @@
   }
 
   .main-navigation__list {
-    margin-right: 10px;
+    margin: 0;
+    margin-right: 2px;
+    margin-bottom: 2px;
   }
 
   .main-navigation__list--catalog {
-    margin: 0;
-    margin-right: 5px;
+    padding: 0;
   }
 }

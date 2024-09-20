@@ -198,7 +198,6 @@
 
 @media (min-width: 1440px) {
   .option__wrapper {
-    max-width: 1700px;
     padding: 0 7.63%;
   }
 
@@ -220,7 +219,7 @@
 
 @media (min-width: 1920px) {
   .option__list {
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .option__item {

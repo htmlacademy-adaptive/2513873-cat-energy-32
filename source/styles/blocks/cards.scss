@@ -8,7 +8,6 @@
   line-height: 1;
   font-weight: 400;
   color: var(--color-second, #fa5072);
-  margin: 0;
   padding: 26px 6.4% 41px;
   box-sizing: border-box;
 }
@@ -44,17 +43,8 @@
     font-size: 60px;
     padding: 0;
     padding-top: 11px;
+    margin: 0;
     margin-bottom: 84px;
-  }
-}
-
-@media (min-width: 950px) and (max-width: 1439px) {
-  .cards__title {
-    text-align: center;
-  }
-
-  .cards__list {
-    justify-content: center;
   }
 }
 
@@ -71,15 +61,5 @@
   .cards__list {
     gap: 63px 80px;
     justify-content: flex-start;
-  }
-}
-
-@media (min-width: 1920px) {
-  .cards__title {
-    text-align: center;
-  }
-
-  .cards__list {
-    justify-content: center;
   }
 }

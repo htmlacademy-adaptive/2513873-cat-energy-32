@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+.footer__wrapper--mobile {
+  max-width: 100%;
+}
+
 .footer__logo-title {
   margin: 0;
   padding: 0;
@@ -91,7 +95,6 @@
 
 @media (min-width: 1440px) {
   .footer__wrapper {
-    max-width: 1700px;
     justify-content: space-between;
     padding: 66px 7.63%;
     align-items: center;
