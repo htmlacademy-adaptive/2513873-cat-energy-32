@@ -42,7 +42,7 @@
 
 @media (min-width: 1440px) {
   .details__wrapper {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 7.63%;
   }
 
@@ -54,7 +54,6 @@
 @media (min-width: 1920px) {
   .details__wrapper {
     max-width: 1700px;
-    margin: 0 auto;
     padding: 0 7.63%;
   }
 }

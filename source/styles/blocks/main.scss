@@ -89,9 +89,19 @@
   }
 
   .main__example {
+    display: grid;
     grid-template-columns: 110px 1fr 110px;
-    background-image: linear-gradient(to bottom, #ffffff 23%, #eaeaea 23%);
+    grid-template-rows: 137px 1fr 24px;
     margin-bottom: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      background-image: linear-gradient(to bottom, #ffffff 0, #eaeaea 0);
+      grid-column: 1 / -1;
+      grid-row: 2 / -1;
+    }
   }
 
   .main__contacts {
