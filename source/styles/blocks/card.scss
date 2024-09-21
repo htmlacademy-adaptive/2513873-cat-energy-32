@@ -240,9 +240,13 @@
     margin-bottom: 0;
   }
 
+  .card__description--liters {
+    gap: 55px;
+  }
+
   .card__definition {
     justify-content: flex-start;
-    padding: 5px 0 8px;
+    padding: 5px 0 7px;
     gap: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -272,7 +276,7 @@
   .card__button {
     min-width: 169px;
     align-self: center;
-    margin: 14px auto 0;
+    margin: 17px auto 0;
   }
 
   .card__button--subproduct {
