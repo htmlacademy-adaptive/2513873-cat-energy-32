@@ -47,16 +47,16 @@
   margin-top: 4px;
 }
 
-.footer__developer-logo .footer__developer-logo__image {
+.footer__developer-logo .footer__developer-logo-image {
   color: #666666;
 }
 
-.footer__developer-logo:hover .footer__developer-logo__image {
+.footer__developer-logo:hover .footer__developer-logo-image {
   color: var(--bg-accent, #fa8072);
 }
 
-.footer__developer-logo:active .footer__developer-logo__image,
-.footer__developer-logo:active .footer__developer-logo__text {
+.footer__developer-logo:active .footer__developer-logo-image,
+.footer__developer-logo:active .footer__developer-logo-text {
   opacity: 0.3;
 }
 
