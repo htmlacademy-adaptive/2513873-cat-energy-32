@@ -43,12 +43,20 @@
   gap: 140px;
 }
 
-.footer__developer-logo:hover .developer-logo__image path,
-.footer__developer-logo:focus .developer-logo__image path {
-  fill: #68b738;
+.footer__developer-logo__text {
+  margin-top: 4px;
 }
 
-.footer__developer-logo:active {
+.footer__developer-logo .footer__developer-logo__image {
+  color: #666666;
+}
+
+.footer__developer-logo:hover .footer__developer-logo__image {
+  color: var(--bg-accent, #fa8072);
+}
+
+.footer__developer-logo:active .footer__developer-logo__image,
+.footer__developer-logo:active .footer__developer-logo__text {
   opacity: 0.3;
 }
 
@@ -90,6 +98,15 @@
     width: 168px;
     height: 37px;
     margin: 0;
+  }
+
+  .footer__developer-logo__text {
+    margin-bottom: 6px;
+    margin-left: 7px;
+  }
+
+  .footer__developer-logo__image {
+    margin-bottom: 6px;
   }
 }
 
